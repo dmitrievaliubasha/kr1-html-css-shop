@@ -15,27 +15,42 @@
   <meta property="og:image" content="https://username.github.io/kr1-html-css-shop/images/preview.jpg">
 </head>
 <body>
-  <header>
-    <div class="site-header">
-      <a class="site-logo" href="index.html">ShopProject</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-header__logo" href="index.html">ShopProject</a>
 
-      <nav class="site-nav" aria-label="Основная навигация">
-        <ul class="site-nav__list">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-          <li><a href="index.html#advantages">Преимущества</a></li>
-          <li><a href="index.html#popular">Популярные товары</a></li>
-          <li><a href="index.html#contacts">Обратная связь</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li class="site-nav__item site-nav__item--has-submenu">
+              <a class="site-nav__link" href="index.html">
+                Главная <span class="site-nav__caret">▾</span>
+              </a>
+              <ul class="site-nav__submenu">
+                <li>
+                  <a class="site-nav__sublink" href="index.html#advantages">Преимущества</a>
+                </li>
+                <li>
+                  <a class="site-nav__sublink" href="index.html#popular">Популярные товары</a>
+                </li>
+              </ul>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active" href="contacts.html">Контакты</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="order.html">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   <main>
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
       <a href="index.html">Главная</a>
-      <span>Контакты</span>
+      <span>/ Контакты</span>
     </nav>
 
     <section class="section">
@@ -45,10 +60,17 @@
       </p>
 
       <ul>
-        <li>Телефон: +7 (900) 000-00-00</li>
-        <li>E-mail: info@example.com</li>
+        <li>Телефон: <a href="tel:+71234567890">+7 (900) 000-00-00</a></li>
+        <li>E-mail: <a href="mailto:info@example.com">info@example.com</a></li>
         <li>Адрес: г. Москва, учебный проект</li>
       </ul>
+    </section>
+
+    <section class="section">
+      <h2>Карта</h2>
+      <div class="map">
+        <iframe id="map_896515319" frameborder="0" width="100%" height="400px" src="https://makemap.2gis.ru/widget?data=eJxNj1FrgzAUhf_L3WOlJEo0Cn0Qy2yZFB2M0Y0-iLnrAtFITLt14n9fajtYHvOdc_nOCNoINChy1C1aI3GA5H0Ee-kREnjE2p4Mgge90T0aO_MRGq20cfyB-Jx--I5badW1QZ6K6mzzDSlMNaSrlUMCh8bI3krduUC5SRdk_y-UrauzyL62uywkxfr5uMszUrzwIkgXrvyz7QR-Q0LJ35s8ON5kL1eVu2mpZWddvtFukOxqOw8JoiUPeBT7HmPLkIWE8YPrSwFJHNLp4EFb96Ue5E1uBFVbSOYsi-OIhIT4jHqgrvR-jLAo4tSnMWNOT-vWyXF31I3USr1-Iqq3-deaE06_YYFrTQ" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+      </div>
     </section>
 
     <section class="section" id="feedback">
@@ -58,11 +80,13 @@
       </p>
       <a class="button" href="index.html#contacts">Перейти к форме</a>
     </section>
+
   </main>
 
-  <footer>
+
+<footer>
     <p>&copy; 2026 Учебный проект. Все права защищены.</p>
     <p>Дисциплина: Фронтенд и бэкенд разработка</p>
-  </footer>
+</footer>
 </body>
 </html>
