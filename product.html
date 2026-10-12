@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товар — Учебный интернет-магазин</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">ShopProject</a>
+
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item site-nav__item--has-submenu">
+            <a class="site-nav__link" href="index.html">
+              Главная <span class="site-nav__caret">▾</span>
+            </a>
+            <ul class="site-nav__submenu">
+              <li><a class="site-nav__sublink" href="index.html#advantages">Преимущества</a></li>
+              <li><a class="site-nav__sublink" href="index.html#popular">Популярные товары</a></li>
+            </ul>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active" href="catalog.html">Каталог</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="order.html">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a href="index.html">Главная</a>
+      <span>/</span>
+      <a href="catalog.html">Каталог</a>
+      <span>/ Товар</span>
+    </nav>
+
+    <section class="product-detail">
+        <div class="product-detail__info">
+        <h1 class="product-detail__title">Товар</h1>
+        <p class="product-detail__price">
+            1000 ₽
+        </p>
+        <p class="product-detail__description">
+            Качественный товар товарного вида для ежедневного использования в товариществе. Поддержка других товаров,
+            время работы до истечения срока годности товара.
+        </p>
+
+        <div class="product-detail__actions">
+            <button class="button" type="button" disabled>
+            Добавить в корзину
+            </button>
+        </div>
+        </div>
+
+        <div class="product-detail__media">
+        <img
+            class="product-detail__image"
+            src="images/product-0.jpg"
+            alt="Товар"
+        >
+        </div>
+    </section>
+
+    <section class="section product-section">
+      <h2>Характеристики</h2>
+      <table class="product-specs">
+        <tbody>
+          <tr>
+            <th>Тип</th>
+            <td>Товар</td>
+          </tr>
+          <tr>
+            <th>Подключение</th>
+            <td>К товару</td>
+          </tr>
+          <tr>
+            <th>Срок годности</th>
+            <td>Ограничен</td>
+          </tr>
+          <tr>
+            <th>Время работы</th>
+            <td>До истечения срока годности</td>
+          </tr>
+          <tr>
+            <th>Вес</th>
+            <td>Тяжеый</td>
+          </tr>
+          <tr>
+            <th>Страна</th>
+            <td>Китай</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <aside class="aside-info">
+      <h2 class="aside-info__title">Описание</h2>
+      <p>
+        Товарный товар товар погоняет к товару, чтобы товар торговал на товарной товарне. При этом товар товарного вида созданный специально для товара другим товарам. Не забывая важную особенность, товар ограничен не по дням, а по часам.
+      </p>
+      <p>
+        Эргономичная форма товара и комплект из трёх других товаров позволяет товару сохранять товарный вид по истечению срока годности.
+      </p>
+      <p>
+        Не рекомендуция для детей, женщин, беременных детей, беременных женщин, людям, собакам, котам. Имеются противопоказания необходимо проконсультироваться со специалистом.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+    <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+  </footer>
+</body>
+</html>
